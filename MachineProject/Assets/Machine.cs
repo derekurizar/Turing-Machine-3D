@@ -140,15 +140,15 @@ public class Machine : MonoBehaviour {
 		btnReset.interactable = false;
 
 		//And now Turn on the Machine
-		InvokeRepeating("MotorMachine", 1.0f, 0.5f);
-		
+		//InvokeRepeating("MotorMachine", 0.5f, 0.5f);
+		StartCoroutine(MotorMachine());
 	}
 
 	//This is the motor of the TuringMachine
-	void MotorMachine(){
+	IEnumerator MotorMachine(){
 		bool addSymbol = false;
 		if(endMachine || errorMachine){
-			CancelInvoke("MotorMachine");
+			//Se acaba la recursividad
 		}else{
 			tm.WorkMachine(ref errorMachine, ref dirMachine, ref stateMachine, ref endMachine, ref symbolMachine, ref addSymbol);
 			steps++;
@@ -159,12 +159,17 @@ public class Machine : MonoBehaviour {
 				ChangeTextElement("text"+actualPosition,symbolMachine.ToString());
 				ChangeTextElement("txtState","Current State: " + stateMachine);
 				ChangeTextElement("txtSteps","Steps: " + steps);
+
+				yield return new WaitForSeconds(0.5f);
+				
 				if(dirMachine == 'R'){
 					MoveToTheRight();
 				}else if(dirMachine == 'L'){
 					MoveToTheLeft();
 				}
 
+				yield return new WaitForSeconds(0.5f);
+				
 				if(addSymbol){
 					AddBlock("β");
 				}
@@ -174,6 +179,7 @@ public class Machine : MonoBehaviour {
 					btnReset.interactable = true;
 				}
 			}
+			StartCoroutine(MotorMachine());
 		}
 	}
 
