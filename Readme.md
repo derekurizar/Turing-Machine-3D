@@ -57,7 +57,7 @@ Al finalizar de leer una entrada, puedes reiniciar la máquina de Turing presion
 
 En la siguiente sección se mostraran los ejemplos de como deberías ingresar las entradas sobre cada una de las máquinas de Turing.
 
-##Suma
+## Suma
 
 La manerá correcta de ingresar sumas en la máquina es de la siguiente forma -> 11+11 o 11+ o +11
 
@@ -68,7 +68,7 @@ Ejemplo de resultados:
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
-##Resta
+## Resta
 
 La manerá correcta de ingresar restas en la máquina es de la siguiente forma -> 11-11 o -11 o 11-
 
@@ -79,7 +79,7 @@ Ejemplo de resultados:
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
-##Multiplicación
+## Multiplicación
 
 La manerá correcta de ingresar multiplicaciones en la máquina es de la siguiente forma -> 11*11
 
@@ -90,7 +90,7 @@ Ejemplo de resultados:
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
-##Palindromes
+## Palindromes
 
 La manerá correcta de ingresar palindromes en la máquina es de la siguiente forma y solamente con letras "abc" -> aba o aabbaa o acca
 
@@ -101,7 +101,7 @@ abba = BBBBBB (siendo aprobado)
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
-##Copia de Cadena
+## Copia de Cadena
 
 La manerá correcta de ingresar copia de cadena en la máquina es de la siguiente forma y solamente con letras "abc" -> abc o abbc o aaa o ccc etc..
 
@@ -112,7 +112,7 @@ abba = BBBabbaabbaBBB (siendo aprobado)
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
-# Por qué mi proyecto es robusto ?
+# ¿Por qué mi proyecto es robusto ?
 
 Primeramente porque se le han implementado varias pruebas en cada una de las máquinas de Turing y todas han dado el resultado esperado. Además de tener
 la facilidad de importarle nuevas máquinas al proyecto hace que el proyecto no solo sea robusto sino que también expandible. Además de que esta implementada
