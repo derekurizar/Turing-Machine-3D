@@ -44,7 +44,7 @@ Como se puede observar el cabezal y las esferas de cada uno de los bloques de la
 ## Entrada Rechazada
 
 Si la máquina de Turing rechaza la entrada entonces sucederá lo siguiente en pantalla:
-![](https://imgur.com/HWhng1B)
+![](https://i.imgur.com/HWhng1B.png)
 
 Como se puede observar el cabezal y las esferas de cada uno de los bloques de la máquina se pondrán de color rojo, rechazando la entrada.
 
@@ -53,7 +53,9 @@ Como se puede observar el cabezal y las esferas de cada uno de los bloques de la
 Al finalizar de leer una entrada, puedes reiniciar la máquina de Turing presionando este botón.
 ![](https://i.imgur.com/bSM5kV2.png)
 
-#Entradas Por máquina de Turing
+# Entradas Por máquina de Turing
+
+En la siguiente sección se mostraran los ejemplos de como deberías ingresar las entradas sobre cada una de las máquinas de Turing.
 
 ##Suma
 
