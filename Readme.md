@@ -3,7 +3,7 @@
 #### Derek André Menéndez Urizar
 #### Proyecto realizado en el IDE Unity 2017.3.1f1
 
-# Turing Machin Project
+# Turing Machine Project
 Este proyecto tiene la capacidad de poder simular distintas máquinas de turing, con la posibilidad de mostrar si una entrada es valida o no. Además la posibilidad
 de agregar más máquinas de turing esta al alcance, puesto que solo se deben de agregar las reglas a tráves de un diccionario y automáticamente estará en funcionamiento la
 nueva máquina de Turing.
@@ -63,8 +63,8 @@ La manerá correcta de ingresar sumas en la máquina es de la siguiente forma ->
 
 Ejemplo de resultados:
 
-11+11 = BBB1111BBB
-11+111 = BBB11111BBB
+11+11 = BBB1111BBB  
+11+111 = BBB11111BBB  
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
@@ -74,8 +74,8 @@ La manerá correcta de ingresar restas en la máquina es de la siguiente forma -
 
 Ejemplo de resultados:
 
-11-11 = BBBBBB
-11-111 = BBB-1BBB
+11-11 = BBBBBB  
+11-111 = BBB-1BBB  
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
@@ -85,8 +85,8 @@ La manerá correcta de ingresar multiplicaciones en la máquina es de la siguien
 
 Ejemplo de resultados:
 
-11*11 = BBB1111BBB
-11*111 = BBB111111BBB
+11*11 = BBB1111BBB  
+11*111 = BBB111111BBB  
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
@@ -96,8 +96,8 @@ La manerá correcta de ingresar palindromes en la máquina es de la siguiente fo
 
 Ejemplo de resultados:
 
-aba = BBBBBB (siendo aprobado)
-abba = BBBBBB (siendo aprobado)
+aba = BBBBBB (siendo aprobado)  
+abba = BBBBBB (siendo aprobado)  
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 
@@ -107,8 +107,8 @@ La manerá correcta de ingresar copia de cadena en la máquina es de la siguient
 
 Ejemplo de resultados:
 
-aa = BBBaaaaBBB (siendo aprobado)
-abba = BBBabbaabbaBBB (siendo aprobado)
+aa = BBBaaaaBBB (siendo aprobado)  
+abba = BBBabbaabbaBBB (siendo aprobado)  
 
 Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
 

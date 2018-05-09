@@ -137,7 +137,7 @@ public class Machine : MonoBehaviour {
 		btnReset.interactable = false;
 
 		//And now Turn on the Machine
-		InvokeRepeating("MotorMachine", 1.0f, 1.0f);
+		InvokeRepeating("MotorMachine", 1.0f, 0.5f);
 		
 	}
 
