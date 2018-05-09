@@ -157,18 +157,17 @@ public class Machine : MonoBehaviour {
 				btnReset.interactable = true;
 			}else{
 				ChangeTextElement("text"+actualPosition,symbolMachine.ToString());
-				ChangeTextElement("txtState","Current State: " + stateMachine);
-				ChangeTextElement("txtSteps","Steps: " + steps);
 
 				yield return new WaitForSeconds(0.5f);
+
+				ChangeTextElement("txtState","Current State: " + stateMachine);
+				ChangeTextElement("txtSteps","Steps: " + steps);
 				
 				if(dirMachine == 'R'){
 					MoveToTheRight();
 				}else if(dirMachine == 'L'){
 					MoveToTheLeft();
 				}
-
-				yield return new WaitForSeconds(0.5f);
 				
 				if(addSymbol){
 					AddBlock("β");
@@ -178,6 +177,9 @@ public class Machine : MonoBehaviour {
 					SuccessMachine();
 					btnReset.interactable = true;
 				}
+
+				yield return new WaitForSeconds(0.5f);
+				
 			}
 			StartCoroutine(MotorMachine());
 		}
@@ -238,7 +240,7 @@ public class Machine : MonoBehaviour {
 
 		//Reinicia los valores inicales
 		player.transform.position = new Vector3(-7.4f,-15.9f,51.9f);
-		CanvasButton.transform.position = new Vector3(-161.3999f,-8.900002f,52.90002f);
+		CanvasButton.transform.position = new Vector3(-62.4f,-8.900002f,52.90002f);
 		positionCube = -49f;
 		positionText = -94.5f;
 		positionSphere = -99.8f;
