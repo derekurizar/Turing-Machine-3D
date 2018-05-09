@@ -23,6 +23,7 @@ public class Machine : MonoBehaviour {
 	private char dirMachine;
 	private int stateMachine;
 	private bool endMachine;
+	private bool Keys;
 	private char symbolMachine;
 	private int steps;
 	private GameObject initSphere;
@@ -35,6 +36,7 @@ public class Machine : MonoBehaviour {
 	public GameObject sphere;
 	public InputField inputMachine;
 	public Dropdown dropMachine;
+
 
 	// Use this for initialization
 	void Start () {
@@ -54,6 +56,7 @@ public class Machine : MonoBehaviour {
 		//Initialize
 		InitializeValuesTuring();
 		mr = new MachineRules();
+		Keys = false;
 
 		//Vista camara
 		offset = transform.position - player.transform.position;
@@ -200,7 +203,8 @@ public class Machine : MonoBehaviour {
 
 		//Se coloca de rojo el cabezal
 		particle = GameObject.Find("PointPlayer").gameObject;
-		particle.GetComponent<Light>().color = new Color(0.82f, 0.0f, 0.0f, 1f);		
+		particle.GetComponent<Light>().color = new Color(0.82f, 0.0f, 0.0f, 1f);
+		Keys = true;		
 	}
 
 	void SuccessMachine(){
@@ -212,6 +216,7 @@ public class Machine : MonoBehaviour {
 		//Se coloca de verde el cabezal
 		particle = GameObject.Find("PointPlayer").gameObject;
 		particle.GetComponent<Light>().color = new Color(0.0f, 1.0f, 0.0f, 1f);	
+		Keys = true;
 	}
 
 	void ResetMachine(){
@@ -232,7 +237,8 @@ public class Machine : MonoBehaviour {
 		positionText = -94.5f;
 		positionSphere = -99.8f;
 		actualPosition = 3;
-		counter = 0;	
+		counter = 0;
+		Keys = false;	
 
 		//Se coloca amarillo el cabezal
 		particle = GameObject.Find("PointPlayer").gameObject;
@@ -324,7 +330,16 @@ public class Machine : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
-		transform.position = player.transform.position + offset;
+	void Update () {		
+		if(!Keys){
+			transform.position = player.transform.position + offset;
+		}else{
+			if (Input.GetKey("up"))
+            	transform.Translate (0.0f,0.0f,0.20f);
+        
+        	if (Input.GetKey("down"))
+            	transform.Translate (0.0f,0.0f,-0.20f);
+
+		}
 	}
 }
