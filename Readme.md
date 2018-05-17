@@ -1,124 +1,130 @@
-#### Universidad Rafael Landivar
-#### Lenguajes Formales y Automatas
-#### Derek André Menéndez Urizar
-#### Proyecto realizado en el IDE Unity 2017.3.1f1
+### Rafael Landivar University
+### Formal and Automated Languages
+### Derek André Menéndez Urizar
+### Project carried out in the IDE Unity 2017.3.1f1
 
 # Turing Machine Project
-Este proyecto tiene la capacidad de poder simular distintas máquinas de turing, con la posibilidad de mostrar si una entrada es valida o no. Además la posibilidad
-de agregar más máquinas de turing esta al alcance, puesto que solo se deben de agregar las reglas a tráves de un diccionario y automáticamente estará en funcionamiento la
-nueva máquina de Turing.
+This project has the ability to simulate different turing machines, with the possibility of showing whether an entry is valid or not. Also the possibility
+adding more turing machines is within reach, since you only have to add the rules through a dictionary and automatically the
+new Turing machine.
 
-El proyecto se mira tal y como esta imagen:
+The project looks like this image:
 ![](https://i.imgur.com/J7nbqCd.png)
 
-Para utilizar el proyecto se deben seguir los siguientes pasos:
+To use the project, the following steps must be followed:
 
- 1. Ejecutar el .exe o reproducir la máquina desde el IDE Unity 2017.3.1f1(este o posterior)
- 2. Elegir la máquina de Turing que se desea simular
- 3. Ingresar la entrada para la máquina de Turing seleccionada.
- 4. Iniciar la máquina.
+  1. Execute the .exe or play the machine from the IDE Unity 2017.3.1f1 (this or later)
+  2. Choose the Turing machine that you want to simulate
+  3. Enter the entry for the selected Turing machine.
+  4. Start the machine.
 
-## Utilizando el Simulador
+## Using the Simulator
 
-Para utilizar el simulador debes elegir la máquina de Turing que deseas utilizar tal y como se muestra en la siguiente imagen:
+To use the simulator you must choose the Turing machine you want to use as shown in the following image:
 ![](https://i.imgur.com/If9ghr6.png)
 
-Una vez elegida la máquina de Turing, debes ingresar la entrada de la máquina tal y como lo muesta la siguiente imagen:
+Once the Turing machine has been chosen, you must enter the machine's entrance as shown in the following image:
 ![](https://i.imgur.com/MJbkVoP.png)
 
-Cuando ya hayas elegido tu Máquina de Turing y hayas ingresado su entrada, solamente debes iniciar la máquina de Turing con estos
-pasos:
+Once you have chosen your Turing Machine and entered its entry, you should only start the Turing machine with these
+Steps:
 
-En el menú selecciona este botón:
+In the menu select this button:
 ![](https://imgur.com/77TvaMu)
 
-Y así podras ejecutar cualquier entrada en cualquier Máquina de Turing.
+And so you can execute any entry in any Turing Machine.
 
-## Entrada Aprobada
+## Approved Entry
 
-Si la máquina de Turing acepta la entrada entonces sucederá lo siguiente en pantalla:
+If the Turing machine accepts the input then the following will happen on the screen:
 ![](https://i.imgur.com/iNQn1G4.png)
 
-Como se puede observar el cabezal y las esferas de cada uno de los bloques de la máquina se pondrán de color verde, aprobando la entrada.
+As you can see the head and spheres of each of the blocks of the machine will turn green, approving the entrance.
 
-## Entrada Rechazada
+## Rejected Entry
 
-Si la máquina de Turing rechaza la entrada entonces sucederá lo siguiente en pantalla:
+If the Turing machine rejects the input then the following will happen on the screen:
 ![](https://i.imgur.com/HWhng1B.png)
 
-Como se puede observar el cabezal y las esferas de cada uno de los bloques de la máquina se pondrán de color rojo, rechazando la entrada.
+As you can see the head and spheres of each of the blocks of the machine will turn red, rejecting the entry.
 
-## Reinicando la Máquina de Turing
+## Restarting the Turing Machine
 
-Al finalizar de leer una entrada, puedes reiniciar la máquina de Turing presionando este botón.
+When you finish reading an entry, you can restart the Turing machine by pressing this button.
 ![](https://i.imgur.com/bSM5kV2.png)
 
-# Entradas Por máquina de Turing
+## Moving the camera
 
-En la siguiente sección se mostraran los ejemplos de como deberías ingresar las entradas sobre cada una de las máquinas de Turing.
+When the Turing machine of your result, you can move the camera with the arrow keys to zoom out enough to see the full result.
 
-## Suma
+# Tickets by Turing machine
 
-La manerá correcta de ingresar sumas en la máquina es de la siguiente forma -> 11+11 o 11+ o +11
+In the next section we will show the examples of how you should enter the entries on each of the Turing machines.
 
-Ejemplo de resultados:
+## Sum
+
+The correct way to enter sums in the machine is as follows -> 11 + 11 or 11+ or +11
+
+Example of results:
 
 11+11 = BBB1111BBB  
 11+111 = BBB11111BBB  
 
-Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
+Note: you must not add the same symbol or any other symbol other than the one shown in the example.
 
-## Resta
+## Subtraction
 
-La manerá correcta de ingresar restas en la máquina es de la siguiente forma -> 11-11 o -11 o 11-
+The correct way to enter subtraction in the machine is as follows -> 11-11 or -11 or 11-
 
-Ejemplo de resultados:
+Example of results:
 
 11-11 = BBBBBB  
 11-111 = BBB-1BBB  
 
-Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
+Note: you must not add the same symbol or any other symbol other than the one shown in the example.
 
-## Multiplicación
+## Multiplication
 
-La manerá correcta de ingresar multiplicaciones en la máquina es de la siguiente forma -> 11*11
+The correct way to enter multiplications in the machine is as follows -> 11 * 11
 
-Ejemplo de resultados:
+Example of results:
 
 11*11 = BBB1111BBB  
 11*111 = BBB111111BBB  
 
-Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
+Note: you must not add the same symbol or any other symbol other than the one shown in the example.
 
 ## Palindromes
 
-La manerá correcta de ingresar palindromes en la máquina es de la siguiente forma y solamente con letras "abc" -> aba o aabbaa o acca
+The correct way to enter palindromes in the machine is as follows and only with letters "abc" -> aba or aabbaa or acca
 
-Ejemplo de resultados:
+Example of results:
 
 aba = BBBBBB (siendo aprobado)  
 abba = BBBBBB (siendo aprobado)  
 
-Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
+Note: you must not add the same symbol or any other symbol other than the one shown in the example.
 
-## Copia de Cadena
+## String Copy
 
-La manerá correcta de ingresar copia de cadena en la máquina es de la siguiente forma y solamente con letras "abc" -> abc o abbc o aaa o ccc etc..
+The correct way to enter a chain copy in the machine is as follows and only with letters "abc" -> abc or abbc or aaa or ccc etc.
 
-Ejemplo de resultados:
+Example of results:
 
-aa = BBBaaaaBBB (siendo aprobado)  
-abba = BBBabbaabbaBBB (siendo aprobado)  
+aa = BBBaaaaBBB (being approved)
+abba = BBBabbaabbaBBB (being approved) 
 
-Nota: no debe agregar simbolo igual ni algún otro simbolo que no sea el que muestra el ejemplo.
+Note: you must not add the same symbol or any other symbol other than the one shown in the example.
 
-# ¿Por qué mi proyecto es robusto ?
+# Why is my project robust?
 
-Primeramente porque se le han implementado varias pruebas en cada una de las máquinas de Turing y todas han dado el resultado esperado. Además de tener
-la facilidad de importarle nuevas máquinas al proyecto hace que el proyecto no solo sea robusto sino que también expandible. Además de que esta implementada
-la máquina en 3D y es bastante agradable a la vista, tomando en cuenta que en Unity hasta el momento no hay ningúna máquina de Turing en 3D.
+Firstly because several tests have been implemented in each of the Turing machines and all have given the expected result. Besides having
+The ease of importing new machines to the project means that the project is not only robust but also expandable. Besides that it is implemented
+the machine in 3D and is quite pleasing to the eye, taking into account that in Unity so far there is no 3D Turing machine.
 
+# Do you want to be a collaborator?
 
+Send me an email to derekurizar@gmail.com and tell me what you want to add.
 
 
 

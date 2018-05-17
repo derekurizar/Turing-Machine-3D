@@ -158,7 +158,7 @@ public class Machine : MonoBehaviour {
 			}else{
 				ChangeTextElement("text"+actualPosition,symbolMachine.ToString());
 
-				yield return new WaitForSeconds(0.5f);
+				yield return new WaitForSeconds(0.2f);
 
 				ChangeTextElement("txtState","Current State: " + stateMachine);
 				ChangeTextElement("txtSteps","Steps: " + steps);
@@ -178,7 +178,7 @@ public class Machine : MonoBehaviour {
 					btnReset.interactable = true;
 				}
 
-				yield return new WaitForSeconds(0.5f);
+				yield return new WaitForSeconds(0.2f);
 				
 			}
 			StartCoroutine(MotorMachine());
